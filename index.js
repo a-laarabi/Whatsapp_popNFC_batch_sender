@@ -3,7 +3,7 @@ const cron = require("node-cron");
 const axios = require("axios").default;
 const logFile = "log.json";
 const dataFile = "data.json";
-const BATCH_SIZE = 80;
+const BATCH_SIZE = 200;
 const AXIOS_TIMEOUT = 10000; // 10s
 
 function ensureLog() {
