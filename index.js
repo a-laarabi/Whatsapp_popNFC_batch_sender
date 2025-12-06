@@ -44,7 +44,7 @@ ensureLog();
 
 // Schedule: run every day at 18:00 (6 PM). Change to "0 9 * * *" for 9AM.
 // cron.schedule("* * * * *", async () => {
-cron.schedule("0 13 * * *", async () => {
+cron.schedule("30 15 * * *", async () => {
   console.log(`[${new Date().toISOString()}] Starting daily message batch...`);
 
   const data = loadJSON(dataFile, []);
